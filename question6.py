@@ -17,4 +17,11 @@ def draw_line(p1, p2):
         glClear(GL_COLOR_BUFFER_BIT)
         glBegin(GL_LINES)
         glColor3f(1.0, 0.0, 0.0)
-        glVertex2f(p1[0], p1[1
+        glVertex2f(p1[0], p1[1])
+        glVertex2f(p2[0], p2[1])
+        glEnd()
+        pygame.display.flip()
+    
+    pygame.quit()
+
+
